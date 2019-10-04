@@ -3,7 +3,7 @@ import React from 'react'
 const PlayerCards = props => {
   return(
     <div>
-      <p className='playerInfo'>{props.name} playing for {props.country}</p>
+      <p>{props.name} playing for {props.country}</p>
     </div>
   )
 }

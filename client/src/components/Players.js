@@ -15,7 +15,6 @@ class Players extends React.Component{
     axios
     .get(`http://localhost:5000/api/players`)
     .then(response => {
-      console.log(response.data)
       this.setState({
         playerInfo: response.data
       })
@@ -27,8 +26,6 @@ class Players extends React.Component{
 
 
   render(){
-    console.log('player', this.state.player)
-    console.log('playerInfo', this.state.playerInfo)
     return(
       <div>
         <h1>Women's World Cup 2019 Players</h1>

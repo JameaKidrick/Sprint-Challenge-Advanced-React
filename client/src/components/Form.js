@@ -2,7 +2,7 @@ import React from 'react';
 import { useInput } from '../hooks/useInput'
 
 const Form = () => {
-  const [fave, handleFave, setFave] = useInput('player', '')
+  const [fave, handleFave, setFave] = useInput('Player', '')
 
   const handleSubmit = e => {
     e.preventDefault();

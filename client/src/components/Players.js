@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import PlayerCards from './PlayerCards'
+import Form from './Form'
 
 class Players extends React.Component{
   constructor(){
@@ -24,12 +25,14 @@ class Players extends React.Component{
     })
   }
 
+
   render(){
     console.log('player', this.state.player)
     console.log('playerInfo', this.state.playerInfo)
     return(
       <div>
         <h1>Women's World Cup 2019 Players</h1>
+        <Form />
         {
           this.state.playerInfo.map(item => {
             return(
